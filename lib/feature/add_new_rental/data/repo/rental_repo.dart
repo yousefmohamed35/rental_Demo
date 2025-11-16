@@ -10,7 +10,9 @@ class RentalRepository {
 
   RentalRepository({required this.service});
 
-  Future<void> addRental(RentalModel rental) => service.addRental(rental);
+  Future<void> addRental(RentalModel rental)async { 
+  await  service.addRental(rental);
+  }
 
   List<RentalModel> getAllRentals() => service.getAllRentals();
 
