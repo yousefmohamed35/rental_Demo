@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:demorental/core/utilities/theme/cubit/theme_state.dart';
+import 'package:demorental/feature/add_new_rental/presentation/manager/rental_cubit/rental_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -9,6 +10,7 @@ import 'core/services/navigation/my_router_tracker.dart';
 import 'core/utilities/light_theme/light_theme.dart';
 import 'core/utilities/theme/cubit/theme_cubit.dart';
 import 'di/injection_container.dart' as di;
+import 'di/injection_container.dart';
 import 'generated/l10n.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
@@ -27,6 +29,9 @@ class _RentalDemoState extends State<RentalDemo> {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => ThemeCubit()..getCurrentLocale()),
+        BlocProvider(
+          create: (context) => locater<RentalCubit>()..loadRentals(),
+        ),
       ],
 
       child: BlocBuilder<ThemeCubit, ThemeState>(

@@ -3,9 +3,7 @@ import 'package:intl/intl.dart';
 
 String formatDate(String dateString) {
   DateTime dateTime = DateTime.parse(dateString);
-  DateFormat format = DateFormat(
-    'yyyy/MM/dd',
-  );
+  DateFormat format = DateFormat('dd - MMMM - yyyy');
   String formattedDate = format.format(dateTime);
   return formattedDate;
 }
@@ -24,8 +22,13 @@ String formateTime(String dateString, String? pattern) {
 
 String formatTimeInEnglish(TimeOfDay time) {
   final DateTime now = DateTime.now();
-  final DateTime selectedTime =
-      DateTime(now.year, now.month, now.day, time.hour, time.minute);
+  final DateTime selectedTime = DateTime(
+    now.year,
+    now.month,
+    now.day,
+    time.hour,
+    time.minute,
+  );
   final DateFormat timeFormat = DateFormat.jm('en');
   return timeFormat.format(selectedTime);
 }

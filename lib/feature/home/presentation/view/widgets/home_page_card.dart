@@ -1,13 +1,14 @@
 import 'package:demorental/core/extension/context.dart';
 import 'package:demorental/core/services/core_utilis/screen_util.dart';
+import 'package:demorental/feature/add_new_rental/data/models/rental_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../../core/services/core_utilis/date_fromatter.dart';
 import '../../../../../core/utilities/light_theme/light_colors.dart';
 
-
 class HomePageCard extends StatelessWidget {
-  const HomePageCard({super.key});
-
+  const HomePageCard({super.key, required this.rental});
+  final RentalModel rental;
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -37,7 +38,7 @@ class HomePageCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'name',
+                    rental.type,
                     style: context.textTheme.labelSmall?.copyWith(
                       color: AppColors.mainText,
                       fontSize: 15.toFont,
@@ -46,7 +47,7 @@ class HomePageCard extends StatelessWidget {
                   ),
                   4.toHeight.verticalSpace,
                   Text(
-                    'type',
+                    rental.homeLocation ?? rental.carType!,
                     style: context.textTheme.labelSmall?.copyWith(
                       color: AppColors.secondText,
                       fontWeight: FontWeight.w500,
@@ -65,7 +66,7 @@ class HomePageCard extends StatelessWidget {
                       vertical: 4,
                     ),
                     child: Text(
-                      '12 june 2025',
+                      formatDate(rental.date.toIso8601String()),
                       style: context.textTheme.labelSmall?.copyWith(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,

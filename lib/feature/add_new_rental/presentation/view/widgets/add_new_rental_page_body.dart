@@ -1,9 +1,16 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:demorental/core/extension/context.dart';
+import 'package:demorental/feature/add_new_rental/presentation/manager/rental_cubit/rental_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:demorental/core/presentation/widgets/drop_down/generic_drop_down_button.dart';
 import 'package:demorental/core/presentation/widgets/drop_down/drop_down_item.dart';
 import 'package:demorental/core/presentation/widgets/button/app_button.dart';
 import 'package:demorental/core/utilities/light_theme/light_colors.dart';
+
+import '../../../../../core/enums/enums.dart';
+import '../../../data/models/rental_model.dart';
 
 class AddNewRentalPageBody extends StatefulWidget {
   const AddNewRentalPageBody({super.key});
@@ -106,15 +113,44 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
 
           const SizedBox(height: 30),
           if (selectedDate != null && selectedTime != null)
-            AppButton(
-              label: 'Save Rental',
-              onPressed: saveRental,
-              width: double.infinity,
+            BlocConsumer<RentalCubit, RentalState>(
+              listener: (context, state) {
+                state.maybeWhen(
+                  orElse: () {},
+                  loading: () {
+                    Center(child: const CircularProgressIndicator());
+                  },
+                  success: (rentals) {
+                    context.showSnackBar(
+                      message: 'Rental saved successfully!',
+                      state: SnackBarStates.success,
+                    );
+                    context.pop();
+                  },
+                );
+              },
+              builder: (context, state) {
+                return AppButton(
+                  label: 'Save Rental',
+                  onPressed: () {
+                    final rental = RentalModel(
+                      type: selectedType!,
+                      homeLocation: selectedHomeLocation,
+                      carType: selectedCarType,
+                      date: selectedDate!,
+                      time: selectedTime!,
+                    );
+                    context.read<RentalCubit>().addRental(rental);
+                  },
+                  width: double.infinity,
+                );
+              },
             ),
         ],
       ),
     );
   }
+
   Widget _buildDropdown<T>({
     Key? key,
     required String hint,
