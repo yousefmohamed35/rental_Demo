@@ -38,7 +38,7 @@ class HomePageCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    rental.type,
+                    getLocalizedType(context, rental.type),
                     style: context.textTheme.labelSmall?.copyWith(
                       color: AppColors.mainText,
                       fontSize: 15.toFont,
@@ -47,7 +47,9 @@ class HomePageCard extends StatelessWidget {
                   ),
                   4.toHeight.verticalSpace,
                   Text(
-                    rental.homeLocation ?? rental.carType!,
+                    rental.homeLocation == null
+                        ? rental.carType!
+                        : getLocalizedLocation(context, rental.homeLocation!),
                     style: context.textTheme.labelSmall?.copyWith(
                       color: AppColors.secondText,
                       fontWeight: FontWeight.w500,
@@ -81,5 +83,29 @@ class HomePageCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  String getLocalizedType(BuildContext context, String type) {
+    switch (type) {
+      case 'block' || 'home':
+        return context.locale.block;
+      case 'car':
+        return context.locale.car;
+      default:
+        return type;
+    }
+  }
+
+  String getLocalizedLocation(BuildContext context, String homeLocation) {
+    switch (homeLocation) {
+      case 'cairo':
+        return context.locale.cairo;
+      case 'geza':
+        return context.locale.giza;
+      case 'alexandria':
+        return context.locale.alexandria;
+      default:
+        return rental.homeLocation!;
+    }
   }
 }
