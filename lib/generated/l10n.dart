@@ -59,6 +59,236 @@ class S {
       args: [],
     );
   }
+
+  /// `block`
+  String get block {
+    return Intl.message(
+      'block',
+      name: 'block',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add new`
+  String get addNew {
+    return Intl.message(
+      'Add new',
+      name: 'addNew',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `scanQr`
+  String get scanQr {
+    return Intl.message(
+      'scanQr',
+      name: 'scanQr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `or`
+  String get or {
+    return Intl.message(
+      'or',
+      name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `enter manunally`
+  String get enterManually {
+    return Intl.message(
+      'enter manunally',
+      name: 'enterManually',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add New Rental`
+  String get addNewRental {
+    return Intl.message(
+      'Add New Rental',
+      name: 'addNewRental',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choose rental type`
+  String get chooseRentalType {
+    return Intl.message(
+      'choose rental type',
+      name: 'chooseRentalType',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `car`
+  String get car {
+    return Intl.message(
+      'car',
+      name: 'car',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choose home location`
+  String get chooseHomeLocation {
+    return Intl.message(
+      'choose home location',
+      name: 'chooseHomeLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cairo`
+  String get cairo {
+    return Intl.message(
+      'cairo',
+      name: 'cairo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `giza`
+  String get giza {
+    return Intl.message(
+      'giza',
+      name: 'giza',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `alexandria`
+  String get alexandria {
+    return Intl.message(
+      'alexandria',
+      name: 'alexandria',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choose car type`
+  String get chooseCarType {
+    return Intl.message(
+      'choose car type',
+      name: 'chooseCarType',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choose rental date`
+  String get chooseRentalDate {
+    return Intl.message(
+      'choose rental date',
+      name: 'chooseRentalDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `rental date`
+  String get rentalDate {
+    return Intl.message(
+      'rental date',
+      name: 'rentalDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `choose rental time`
+  String get chooseRentalTime {
+    return Intl.message(
+      'choose rental time',
+      name: 'chooseRentalTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `rental time`
+  String get rentalTime {
+    return Intl.message(
+      'rental time',
+      name: 'rentalTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `save rental`
+  String get saveRental {
+    return Intl.message(
+      'save rental',
+      name: 'saveRental',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `rental saved successfully`
+  String get rentalSavedSuccessfully {
+    return Intl.message(
+      'rental saved successfully',
+      name: 'rentalSavedSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `new rental`
+  String get newRental {
+    return Intl.message(
+      'new rental',
+      name: 'newRental',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `reminder Rental`
+  String get reminderRental {
+    return Intl.message(
+      'reminder Rental',
+      name: 'reminderRental',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `you have rental today`
+  String get reminder {
+    return Intl.message(
+      'you have rental today',
+      name: 'reminder',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

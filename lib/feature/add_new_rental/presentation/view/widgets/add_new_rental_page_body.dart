@@ -14,6 +14,13 @@ import 'package:demorental/core/utilities/light_theme/light_colors.dart';
 import '../../../../../core/enums/enums.dart';
 import '../../../data/models/rental_model.dart';
 
+class DropdownItem {
+  final String value; // القيمة الداخلية
+  final String display; // النص المعروض للمستخدم
+
+  DropdownItem({required this.value, required this.display});
+}
+
 class AddNewRentalPageBody extends StatefulWidget {
   const AddNewRentalPageBody({super.key});
 
@@ -22,9 +29,9 @@ class AddNewRentalPageBody extends StatefulWidget {
 }
 
 class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
-  final List<String> types = ['home', 'car'];
-  final List<String> homeLocations = ['cairo', 'geza', 'alexandria'];
-  final List<String> carTypes = ['BMW', 'TOYOTA', 'HONDA', 'Marcedes'];
+  late final List<DropdownItem> types;
+  late final List<DropdownItem> homeLocations;
+  late final List<DropdownItem> carTypes;
 
   String? selectedType;
   String? selectedHomeLocation;
@@ -33,16 +40,42 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
   TimeOfDay? selectedTime;
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // تعريف القوائم مع localization
+    types = [
+      DropdownItem(value: 'block', display: context.locale.block),
+      DropdownItem(value: 'car', display: context.locale.car),
+    ];
+
+    homeLocations = [
+      DropdownItem(value: 'cairo', display: context.locale.cairo),
+      DropdownItem(value: 'giza', display: context.locale.giza),
+      DropdownItem(value: 'alexandria', display: context.locale.alexandria),
+    ];
+
+    carTypes = [
+      DropdownItem(value: 'BMW', display: 'BMW'),
+      DropdownItem(value: 'TOYOTA', display: 'TOYOTA'),
+      DropdownItem(value: 'HONDA', display: 'HONDA'),
+      DropdownItem(value: 'Marcedes', display: 'Marcedes'),
+    ];
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Add New Rental', style: Theme.of(context).textTheme.bodyMedium),
+          Text(
+            context.locale.addNewRental,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           const SizedBox(height: 20),
-          _buildDropdown<String>(
-            hint: 'Choose rental type',
+          _buildDropdown(
+            hint: context.locale.chooseRentalType,
             items: types,
             selectedItem: selectedType,
             onChanged: (value) {
@@ -56,10 +89,10 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
             },
           ),
           const SizedBox(height: 20),
-          if (selectedType == 'home')
-            _buildDropdown<String>(
+          if (selectedType == 'block')
+            _buildDropdown(
               key: const ValueKey('home_dropdown'),
-              hint: 'Choose home location',
+              hint: context.locale.chooseHomeLocation,
               items: homeLocations,
               selectedItem: selectedHomeLocation,
               onChanged: (value) {
@@ -71,9 +104,9 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
               },
             ),
           if (selectedType == 'car')
-            _buildDropdown<String>(
+            _buildDropdown(
               key: const ValueKey('car_dropdown'),
-              hint: 'Choose car type',
+              hint: context.locale.chooseCarType,
               items: carTypes,
               selectedItem: selectedCarType,
               onChanged: (value) {
@@ -84,7 +117,6 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                 });
               },
             ),
-
           const SizedBox(height: 20),
           if (_shouldShowDatePicker)
             AppButton(
@@ -95,10 +127,9 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                 context,
               ).textTheme.labelSmall?.copyWith(color: AppColors.primaryColor),
               label: selectedDate == null
-                  ? 'Choose rental date'
-                  : 'Date: ${DateFormat('yyyy-MM-dd').format(selectedDate!)}',
+                  ? context.locale.chooseRentalDate
+                  : '${context.locale.rentalDate}: ${DateFormat('yyyy-MM-dd').format(selectedDate!)}',
             ),
-
           const SizedBox(height: 10),
           if (selectedDate != null)
             AppButton(
@@ -109,10 +140,9 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                 context,
               ).textTheme.labelSmall?.copyWith(color: AppColors.primaryColor),
               label: selectedTime == null
-                  ? 'Choose time'
-                  : 'Time: ${selectedTime!.format(context)}',
+                  ? context.locale.chooseRentalTime
+                  : '${context.locale.rentalTime}: ${selectedTime!.format(context)}',
             ),
-
           const SizedBox(height: 30),
           if (selectedDate != null && selectedTime != null)
             BlocConsumer<RentalCubit, RentalState>(
@@ -124,17 +154,16 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                   },
                   success: (rentals) {
                     context.showSnackBar(
-                      message: 'Rental saved successfully!',
+                      message: context.locale.rentalSavedSuccessfully,
                       state: SnackBarStates.success,
                     );
-
                     context.pop();
                   },
                 );
               },
               builder: (context, state) {
                 return AppButton(
-                  label: 'Save Rental',
+                  label: context.locale.saveRental,
                   onPressed: () {
                     final rental = RentalModel(
                       type: selectedType!,
@@ -143,8 +172,11 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                       date: selectedDate!,
                       time: selectedTime!,
                     );
+
                     final id = DateTime.now().millisecondsSinceEpoch ~/ 1000;
+
                     context.read<RentalCubit>().addRental(rental);
+
                     final scheduledDateTime = DateTime(
                       selectedDate!.year,
                       selectedDate!.month,
@@ -152,17 +184,18 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                       selectedTime!.hour,
                       selectedTime!.minute,
                     );
-                   
+
                     locater<NotificationRepository>().scheduleNotification(
                       id: id,
-                      title: 'Rental Reminder',
-                      body: 'Rental payment is due today!',
+                      title: context.locale.reminderRental,
+                      body: context.locale.reminder,
                       scheduledDate: scheduledDateTime,
                     );
+
                     locater<NotificationRepository>().showNotification(
                       id: rental.hashCode,
-                      title: 'new rental',
-                      body: 'you have a new rental',
+                      title: context.locale.newRental,
+                      body: context.locale.rentalSavedSuccessfully,
                     );
                   },
                   width: double.infinity,
@@ -174,32 +207,36 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
     );
   }
 
-  Widget _buildDropdown<T>({
+  Widget _buildDropdown({
     Key? key,
     required String hint,
-    required List<String> items,
-    required T? selectedItem,
-    required void Function(T?) onChanged,
+    required List<DropdownItem> items,
+    required String? selectedItem,
+    required void Function(String?) onChanged,
   }) {
-    T? safeSelectedItem;
+    DropdownItem? safeSelectedItem;
     if (selectedItem != null) {
-      bool exists = items.any((item) => item == selectedItem);
-      safeSelectedItem = exists ? selectedItem : null;
+      safeSelectedItem = items.firstWhere((item) => item.value == selectedItem);
     }
 
-    return GenericDropDownButton<T>(
+    return GenericDropDownButton<DropdownItem>(
       key: key,
       hintText: hint,
       items: items
-          .map((e) => GenericDropdownMenuItem<T>(title: e, value: e as T))
+          .map(
+            (e) => GenericDropdownMenuItem<DropdownItem>(
+              title: e.display,
+              value: e,
+            ),
+          )
           .toList(),
       selectedItem: safeSelectedItem,
-      onChanged: onChanged,
+      onChanged: (value) => onChanged(value?.value),
     );
   }
 
   bool get _shouldShowDatePicker {
-    return (selectedType == 'home' && selectedHomeLocation != null) ||
+    return (selectedType == 'block' && selectedHomeLocation != null) ||
         (selectedType == 'car' && selectedCarType != null);
   }
 
@@ -220,21 +257,5 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
       initialTime: TimeOfDay.now(),
     );
     if (time != null) setState(() => selectedTime = time);
-  }
-
-  void saveRental() {
-    final rentalInfo = {
-      'type': selectedType,
-      'homeLocation': selectedHomeLocation,
-      'carType': selectedCarType,
-      'date': selectedDate,
-      'time': selectedTime,
-    };
-
-    print('Rental Info: $rentalInfo');
-
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text('Rental saved successfully!')));
   }
 }

@@ -21,6 +21,39 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) =>
-      <String, Function>{"locale": MessageLookupByLibrary.simpleMessage("en")};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "addNew": MessageLookupByLibrary.simpleMessage("Add new"),
+        "addNewRental": MessageLookupByLibrary.simpleMessage("Add New Rental"),
+        "alexandria": MessageLookupByLibrary.simpleMessage("alexandria"),
+        "block": MessageLookupByLibrary.simpleMessage("block"),
+        "cairo": MessageLookupByLibrary.simpleMessage("cairo"),
+        "car": MessageLookupByLibrary.simpleMessage("car"),
+        "chooseCarType":
+            MessageLookupByLibrary.simpleMessage("choose car type"),
+        "chooseHomeLocation":
+            MessageLookupByLibrary.simpleMessage("choose home location"),
+        "chooseRentalDate":
+            MessageLookupByLibrary.simpleMessage("choose rental date"),
+        "chooseRentalTime":
+            MessageLookupByLibrary.simpleMessage("choose rental time"),
+        "chooseRentalType":
+            MessageLookupByLibrary.simpleMessage("choose rental type"),
+        "enterManually":
+            MessageLookupByLibrary.simpleMessage("enter manunally"),
+        "giza": MessageLookupByLibrary.simpleMessage("giza"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "locale": MessageLookupByLibrary.simpleMessage("en"),
+        "newRental": MessageLookupByLibrary.simpleMessage("new rental"),
+        "or": MessageLookupByLibrary.simpleMessage("or"),
+        "reminder":
+            MessageLookupByLibrary.simpleMessage("you have rental today"),
+        "reminderRental":
+            MessageLookupByLibrary.simpleMessage("reminder Rental"),
+        "rentalDate": MessageLookupByLibrary.simpleMessage("rental date"),
+        "rentalSavedSuccessfully":
+            MessageLookupByLibrary.simpleMessage("rental saved successfully"),
+        "rentalTime": MessageLookupByLibrary.simpleMessage("rental time"),
+        "saveRental": MessageLookupByLibrary.simpleMessage("save rental"),
+        "scanQr": MessageLookupByLibrary.simpleMessage("scanQr")
+      };
 }

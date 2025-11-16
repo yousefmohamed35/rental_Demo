@@ -1,4 +1,27 @@
 {
   "@@locale": "en",
-  "locale": "en"
+  "locale": "en",
+  "block" : "block",
+  "home": "Home",
+  "addNew":"Add new",
+  "scanQr":"scanQr",
+  "or":"or",
+  "enterManually":"enter manunally",
+  "addNewRental":"Add New Rental",
+  "chooseRentalType":"choose rental type",
+  "car":"car",
+  "chooseHomeLocation" : "choose home location",
+  "cairo":"cairo",
+  "giza":"giza",
+  "alexandria":"alexandria",
+  "chooseCarType":"choose car type",
+  "chooseRentalDate":"choose rental date",
+  "rentalDate":"rental date",
+  "chooseRentalTime":"choose rental time",
+  "rentalTime" : "rental time",
+  "saveRental" : "save rental",
+  "rentalSavedSuccessfully" : "rental saved successfully",
+  "newRental":"new rental",
+  "reminderRental" :"reminder Rental",
+  "reminder":"you have rental today"
 }

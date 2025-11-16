@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:demorental/core/extension/context.dart';
 import 'package:demorental/core/presentation/widgets/custom_scaffold.dart';
 import 'package:demorental/core/services/core_utilis/app_sevices.dart';
 import 'package:demorental/core/utilities/light_theme/light_colors.dart';
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
     return CustomScaffold(
       backgroundColor: AppColors.scaffoldBackgroundColor,
       appBarColor: AppColors.primaryColor,
-      title: 'home',
+      title: context.locale.home,
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           AppServices.showDefaultModalSheet(
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
             child: AddNewMethodBottomSheet(),
           );
         },
-        label: Text('Add'),
+        label: Text(context.locale.addNew),
         icon: Icon(Icons.add),
       ),
       child: HomePageBody(),

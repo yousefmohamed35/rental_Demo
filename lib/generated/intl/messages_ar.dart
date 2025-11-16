@@ -21,6 +21,38 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) =>
-      <String, Function>{"locale": MessageLookupByLibrary.simpleMessage("ar")};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "addNew": MessageLookupByLibrary.simpleMessage("إضافة جديد"),
+        "addNewRental":
+            MessageLookupByLibrary.simpleMessage("إضافة إيجار جديد"),
+        "alexandria": MessageLookupByLibrary.simpleMessage("الأسكندرية"),
+        "block": MessageLookupByLibrary.simpleMessage("شقة"),
+        "cairo": MessageLookupByLibrary.simpleMessage("القاهرة"),
+        "car": MessageLookupByLibrary.simpleMessage("سيارة"),
+        "chooseCarType":
+            MessageLookupByLibrary.simpleMessage("اختر نوع السيارة"),
+        "chooseHomeLocation":
+            MessageLookupByLibrary.simpleMessage("اختر موقع المنزل"),
+        "chooseRentalDate":
+            MessageLookupByLibrary.simpleMessage("اختر تاريخ الإيجار"),
+        "chooseRentalTime":
+            MessageLookupByLibrary.simpleMessage("اختر وقت الإيجار"),
+        "chooseRentalType":
+            MessageLookupByLibrary.simpleMessage("اختر نوع الإيجار"),
+        "enterManually": MessageLookupByLibrary.simpleMessage("ادخل يدويا"),
+        "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),
+        "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
+        "locale": MessageLookupByLibrary.simpleMessage("ar"),
+        "newRental": MessageLookupByLibrary.simpleMessage("إيجار جديد"),
+        "or": MessageLookupByLibrary.simpleMessage("أو"),
+        "reminder": MessageLookupByLibrary.simpleMessage("لديك ايجار اليوم"),
+        "reminderRental":
+            MessageLookupByLibrary.simpleMessage("تذكير بالإيجار"),
+        "rentalDate": MessageLookupByLibrary.simpleMessage("تاريخ الإيجار"),
+        "rentalSavedSuccessfully":
+            MessageLookupByLibrary.simpleMessage("تم حفظ الإيجار بنجاح"),
+        "rentalTime": MessageLookupByLibrary.simpleMessage("وقت الإيجار"),
+        "saveRental": MessageLookupByLibrary.simpleMessage("حفظ الإيجار"),
+        "scanQr": MessageLookupByLibrary.simpleMessage("مسح الباركود")
+      };
 }

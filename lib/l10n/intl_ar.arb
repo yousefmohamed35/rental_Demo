@@ -1,4 +1,27 @@
 {
   "@@locale": "ar",
-  "locale": "ar"
+  "locale": "ar",
+  "block" : "شقة",
+  "home": "الصفحة الرئيسية",
+  "addNew":"إضافة جديد",
+  "scanQr":"مسح الباركود",
+  "or":"أو",
+  "enterManually":"ادخل يدويا",
+  "addNewRental":"إضافة إيجار جديد",
+  "chooseRentalType":"اختر نوع الإيجار",
+  "car":"سيارة",
+  "chooseHomeLocation" : "اختر موقع المنزل",
+  "cairo":"القاهرة",
+  "giza":"الجيزة",
+  "alexandria":"الأسكندرية",
+  "chooseCarType":"اختر نوع السيارة",
+  "chooseRentalDate":"اختر تاريخ الإيجار",
+  "rentalDate":"تاريخ الإيجار",
+  "rentalTime":"وقت الإيجار",
+  "chooseRentalTime":"اختر وقت الإيجار",
+  "saveRental" : "حفظ الإيجار",
+  "rentalSavedSuccessfully" : "تم حفظ الإيجار بنجاح",
+  "newRental":"إيجار جديد",
+  "reminderRental" : "تذكير بالإيجار",
+  "reminder":"لديك ايجار اليوم"
 }

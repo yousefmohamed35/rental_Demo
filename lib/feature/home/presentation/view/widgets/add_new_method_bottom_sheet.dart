@@ -24,7 +24,7 @@ class AddNewMethodBottomSheet extends StatelessWidget {
             ),
             16.verticalSpace,
             AppButton(
-              label: 'scan qr',
+              label: context.locale.scanQr,
               width: context.screenWidth * 0.55,
               padding: const EdgeInsets.symmetric(vertical: 14),
               onPressed: () {},
@@ -38,7 +38,7 @@ class AddNewMethodBottomSheet extends StatelessWidget {
                 ),
                 16.horizontalSpace,
                 Text(
-                  'or',
+                  context.locale.or,
                   style: context.textTheme.titleSmall?.copyWith(
                     fontWeight: FontWeight.w400,
                     fontSize: 23,
@@ -52,7 +52,7 @@ class AddNewMethodBottomSheet extends StatelessWidget {
             ),
             20.verticalSpace,
             TextButton(
-              child: Text('enter mannully'),
+              child: Text(context.locale.enterManually),
               onPressed: () {
                 context.pop();
                 context.pushRoute(AddNewRentalRoute());
