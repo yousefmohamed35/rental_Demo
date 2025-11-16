@@ -19,7 +19,12 @@ class HomePageBody extends StatelessWidget {
           },
           success: (rentals) {
             if (rentals.isNotEmpty) {
-              return Column(children: [HomePageCard(rental: rentals[0])]);
+              return ListView.builder(
+                itemCount: rentals.length,
+                itemBuilder: (context, index) {
+                  return HomePageCard(rental: rentals[index]);
+                },
+              );
             } else {
               return EmptyHomePage();
             }

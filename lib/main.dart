@@ -6,6 +6,7 @@ import 'package:timeago/timeago.dart' as timeago;
 
 import 'core/data/data_sources/shared_pref.dart';
 import 'di/injection_container.dart' as di;
+import 'feature/notification/data/services/notification_services.dart';
 import 'rental_demo.dart';
 
 Future<void> main() async {
@@ -15,7 +16,7 @@ Future<void> main() async {
   await ScreenUtil.ensureScreenSize();
   await SharedPref.getInstance();
   preventLandscape();
-
+  await di.locater<NotificationService>().init();
   timeago.setLocaleMessages('ar', timeago.ArMessages());
 
   runApp(const RentalDemo());

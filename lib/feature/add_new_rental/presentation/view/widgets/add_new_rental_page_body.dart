@@ -1,6 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:demorental/core/extension/context.dart';
+import 'package:demorental/di/injection_container.dart';
 import 'package:demorental/feature/add_new_rental/presentation/manager/rental_cubit/rental_cubit.dart';
+import 'package:demorental/feature/notification/data/repo/notification_repo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -125,6 +127,7 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                       message: 'Rental saved successfully!',
                       state: SnackBarStates.success,
                     );
+
                     context.pop();
                   },
                 );
@@ -140,7 +143,27 @@ class _AddNewRentalPageBodyState extends State<AddNewRentalPageBody> {
                       date: selectedDate!,
                       time: selectedTime!,
                     );
+                    final id = DateTime.now().millisecondsSinceEpoch ~/ 1000;
                     context.read<RentalCubit>().addRental(rental);
+                    final scheduledDateTime = DateTime(
+                      selectedDate!.year,
+                      selectedDate!.month,
+                      selectedDate!.day,
+                      selectedTime!.hour,
+                      selectedTime!.minute,
+                    );
+                   
+                    locater<NotificationRepository>().scheduleNotification(
+                      id: id,
+                      title: 'Rental Reminder',
+                      body: 'Rental payment is due today!',
+                      scheduledDate: scheduledDateTime,
+                    );
+                    locater<NotificationRepository>().showNotification(
+                      id: rental.hashCode,
+                      title: 'new rental',
+                      body: 'you have a new rental',
+                    );
                   },
                   width: double.infinity,
                 );

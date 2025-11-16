@@ -21,6 +21,12 @@ import 'package:demorental/feature/add_new_rental/data/services/rental_services.
     as _i891;
 import 'package:demorental/feature/add_new_rental/presentation/manager/rental_cubit/rental_cubit.dart'
     as _i763;
+import 'package:demorental/feature/notification/data/repo/notification_repo.dart'
+    as _i692;
+import 'package:demorental/feature/notification/data/services/notification_services.dart'
+    as _i836;
+import 'package:demorental/feature/notification/presentation/manager/notification_cubit.dart'
+    as _i410;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
@@ -40,6 +46,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.singleton<_i37.AppRouter>(() => _i37.AppRouter());
     gh.lazySingleton<_i1041.SharedPref>(() => _i1041.SharedPref());
     gh.lazySingleton<_i891.RentalHiveService>(() => _i891.RentalHiveService());
+    gh.lazySingleton<_i836.NotificationService>(
+      () => _i836.NotificationService(),
+    );
     gh.lazySingleton<_i443.RentalRepository>(
       () => _i443.RentalRepository(service: gh<_i891.RentalHiveService>()),
     );
@@ -48,6 +57,14 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i763.RentalCubit>(
       () => _i763.RentalCubit(gh<_i443.RentalRepository>()),
+    );
+    gh.lazySingleton<_i692.NotificationRepository>(
+      () => _i692.NotificationRepository(
+        service: gh<_i836.NotificationService>(),
+      ),
+    );
+    gh.factory<_i410.NotificationCubit>(
+      () => _i410.NotificationCubit(gh<_i692.NotificationRepository>()),
     );
     return this;
   }
