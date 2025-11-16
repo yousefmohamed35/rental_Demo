@@ -1,6 +1,8 @@
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:injectable/injectable.dart';
 import '../models/rental_model.dart';
 
+@lazySingleton
 class RentalHiveService {
   static const String boxName = 'rentals';
 
