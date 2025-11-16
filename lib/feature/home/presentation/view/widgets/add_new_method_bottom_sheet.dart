@@ -1,4 +1,6 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:demorental/core/extension/context.dart';
+import 'package:demorental/core/services/navigation/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -49,7 +51,12 @@ class AddNewMethodBottomSheet extends StatelessWidget {
               ],
             ),
             20.verticalSpace,
-            TextButton(child: Text('enter mannully'), onPressed: () {}),
+            TextButton(
+              child: Text('enter mannully'),
+              onPressed: () {
+                context.pushRoute(AddNewRentalRoute());
+              },
+            ),
           ],
         ),
       ),
