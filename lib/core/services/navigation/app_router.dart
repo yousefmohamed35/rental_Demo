@@ -1,0 +1,22 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:demorental/core/services/navigation/routes.dart';
+import 'package:injectable/injectable.dart';
+
+import '../../../feature/add_new_rental/presentation/view/add_new_rental_page.dart';
+import '../../../feature/home/presentation/view/home_page.dart';
+
+part 'app_router.gr.dart';
+
+@AutoRouterConfig(replaceInRouteName: 'Page,Route')
+// extend the generated private router
+@singleton
+class AppRouter extends RootStackRouter {
+  @override
+  RouteType get defaultRouteType => const RouteType.adaptive();
+
+  @override
+  final List<AutoRoute> routes = [
+    AutoRoute(page: HomeRoute.page, path: AppRoutes.home),
+    AutoRoute(page: AddNewRentalRoute.page, path: AppRoutes.addNewRental),
+  ];
+}
