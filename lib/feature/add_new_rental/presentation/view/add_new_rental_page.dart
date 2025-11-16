@@ -1,9 +1,9 @@
-
 import 'package:auto_route/auto_route.dart';
 import 'package:demorental/core/presentation/widgets/custom_scaffold.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/utilities/light_theme/light_colors.dart';
+import 'widgets/add_new_rental_page_body.dart';
 
 @RoutePage()
 class AddNewRentalPage extends StatelessWidget {
@@ -12,8 +12,10 @@ class AddNewRentalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScaffold(
-       backgroundColor: AppColors.scaffoldBackgroundColor,
+      title: 'Add New',
+      backgroundColor: AppColors.scaffoldBackgroundColor,
       appBarColor: AppColors.primaryColor,
-      child: Text('data'));
+      child: AddNewRentalPageBody(),
+    );
   }
 }
