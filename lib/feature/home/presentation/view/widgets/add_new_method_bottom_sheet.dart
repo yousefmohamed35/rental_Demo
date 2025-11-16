@@ -54,6 +54,7 @@ class AddNewMethodBottomSheet extends StatelessWidget {
             TextButton(
               child: Text('enter mannully'),
               onPressed: () {
+                context.pop();
                 context.pushRoute(AddNewRentalRoute());
               },
             ),
