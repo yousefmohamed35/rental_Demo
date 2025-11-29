@@ -46,6 +46,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("اختر نوع الإيجار"),
         "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "emailValidation": MessageLookupByLibrary.simpleMessage(
             "عنوان البريد الإلكتروني الذي ادخلته غير صالح"),

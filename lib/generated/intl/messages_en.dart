@@ -46,6 +46,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("choose rental type"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailValidation": MessageLookupByLibrary.simpleMessage(
             "The email address you have entered is invalid"),

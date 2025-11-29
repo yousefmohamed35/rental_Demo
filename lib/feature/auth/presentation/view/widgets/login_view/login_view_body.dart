@@ -1,9 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:demorental/core/extension/context.dart';
 import 'package:demorental/core/services/core_utilis/screen_util.dart';
+import 'package:demorental/core/services/navigation/app_router.dart';
 import 'package:demorental/feature/auth/presentation/view/widgets/shared/terms_and_conditions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../core/constants/themeing/themes_contants.dart';
+import '../../../../../../core/presentation/widgets/button/app_button.dart';
 import '../../../../../../core/presentation/widgets/logo/arkanzax_logo.dart';
 import '../../../../../../core/presentation/widgets/text_fields/email_or_phone_text_field.dart';
 import '../../../../../../core/presentation/widgets/text_fields/generic_text_field.dart';
@@ -83,7 +86,27 @@ class LoginViewBody extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20.toHeight),
+          32.verticalSpace,
+          AppButton(
+            label: context.locale.login,
+            onPressed: () {
+              context.pushRoute(HomeRoute());
+            },
+            width: double.infinity,
+          ),
+          10.verticalSpace,
+          InkWell(
+            onTap: () {},
+            child: Center(
+              child: Text(
+                context.locale.createAccount,
+                style: TextStyle(
+                  fontWeight: FontWeight.normal,
+                  color: Theme.of(context).primaryColor,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

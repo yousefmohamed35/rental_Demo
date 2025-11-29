@@ -17,7 +17,7 @@ class LoginViewPage extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.black),
         actions: const [LanguageButton()],
       ),
-      body: LoginViewBody(),
+      body: SafeArea(child: LoginViewBody()),
     );
   }
 }

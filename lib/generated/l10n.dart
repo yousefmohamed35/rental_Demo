@@ -270,6 +270,16 @@ class S {
     );
   }
 
+  /// `Create Account`
+  String get createAccount {
+    return Intl.message(
+      'Create Account',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `block`
   String get block {
     return Intl.message(
