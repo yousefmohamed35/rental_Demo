@@ -3,6 +3,7 @@ import 'package:demorental/core/services/navigation/routes.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../feature/add_new_rental/presentation/view/add_new_rental_page.dart';
+import '../../../feature/auth/presentation/view/login_view_page.dart';
 import '../../../feature/home/presentation/view/home_page.dart';
 
 part 'app_router.gr.dart';
@@ -16,6 +17,7 @@ class AppRouter extends RootStackRouter {
 
   @override
   final List<AutoRoute> routes = [
+    AutoRoute(page: LoginViewRoute.page, path: AppRoutes.login),
     AutoRoute(page: HomeRoute.page, path: AppRoutes.home),
     AutoRoute(page: AddNewRentalRoute.page, path: AppRoutes.addNewRental),
   ];

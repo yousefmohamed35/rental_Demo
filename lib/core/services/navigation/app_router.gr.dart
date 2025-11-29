@@ -41,3 +41,19 @@ class HomeRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [LoginViewPage]
+class LoginViewRoute extends PageRouteInfo<void> {
+  const LoginViewRoute({List<PageRouteInfo>? children})
+    : super(LoginViewRoute.name, initialChildren: children);
+
+  static const String name = 'LoginViewRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LoginViewPage();
+    },
+  );
+}
