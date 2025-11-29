@@ -27,6 +27,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "alexandria": MessageLookupByLibrary.simpleMessage("alexandria"),
         "and": MessageLookupByLibrary.simpleMessage("and"),
         "block": MessageLookupByLibrary.simpleMessage("block"),
+        "by": MessageLookupByLibrary.simpleMessage("By"),
         "byPressingContinue": MessageLookupByLibrary.simpleMessage(
             "By pressing continue, you are agreeing to"),
         "cairo": MessageLookupByLibrary.simpleMessage("cairo"),
@@ -69,6 +70,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "pleaseEnterValidPhoneNumber": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid phone number"),
+        "powered": MessageLookupByLibrary.simpleMessage("Powered"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "reminder":
             MessageLookupByLibrary.simpleMessage("you have rental today"),

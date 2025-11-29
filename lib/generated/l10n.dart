@@ -250,6 +250,26 @@ class S {
     );
   }
 
+  /// `Powered`
+  String get powered {
+    return Intl.message(
+      'Powered',
+      name: 'powered',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By`
+  String get by {
+    return Intl.message(
+      'By',
+      name: 'by',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `block`
   String get block {
     return Intl.message(

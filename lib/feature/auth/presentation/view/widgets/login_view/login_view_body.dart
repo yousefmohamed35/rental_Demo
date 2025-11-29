@@ -7,6 +7,7 @@ import '../../../../../../core/constants/themeing/themes_contants.dart';
 import '../../../../../../core/presentation/widgets/logo/arkanzax_logo.dart';
 import '../../../../../../core/presentation/widgets/text_fields/email_or_phone_text_field.dart';
 import '../../../../../../core/presentation/widgets/text_fields/generic_text_field.dart';
+import '../shared/powered_by_arkanzax.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -76,6 +77,8 @@ class LoginViewBody extends StatelessWidget {
                   ),
                   42.toHeight.verticalSpace,
                   TermsAndConditions(),
+                  10.verticalSpace,
+                  PowredByArkanzaxWidget(),
                 ],
               ),
             ),

@@ -28,6 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "alexandria": MessageLookupByLibrary.simpleMessage("الأسكندرية"),
         "and": MessageLookupByLibrary.simpleMessage("و"),
         "block": MessageLookupByLibrary.simpleMessage("شقة"),
+        "by": MessageLookupByLibrary.simpleMessage("بواسطة"),
         "byPressingContinue": MessageLookupByLibrary.simpleMessage(
             "بالضغط على متابعة ، فإنك توافق على"),
         "cairo": MessageLookupByLibrary.simpleMessage("القاهرة"),
@@ -68,6 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
         "pleaseEnterValidPhoneNumber":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال رقم هاتف صالح"),
+        "powered": MessageLookupByLibrary.simpleMessage("جميع الحقوق محفوظة"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "reminder": MessageLookupByLibrary.simpleMessage("لديك ايجار اليوم"),
         "reminderRental":

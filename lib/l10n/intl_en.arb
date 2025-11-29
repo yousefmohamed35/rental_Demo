@@ -21,6 +21,8 @@
   "byPressingContinue": "By pressing continue, you are agreeing to",
   "and": "and",
   "privacyPolicy": "Privacy Policy",
+   "powered":"Powered",
+  "by" : "By",
 
   "block" : "block",
   "home": "Home",
