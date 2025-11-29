@@ -25,7 +25,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "addNew": MessageLookupByLibrary.simpleMessage("Add new"),
         "addNewRental": MessageLookupByLibrary.simpleMessage("Add New Rental"),
         "alexandria": MessageLookupByLibrary.simpleMessage("alexandria"),
+        "and": MessageLookupByLibrary.simpleMessage("and"),
         "block": MessageLookupByLibrary.simpleMessage("block"),
+        "byPressingContinue": MessageLookupByLibrary.simpleMessage(
+            "By pressing continue, you are agreeing to"),
         "cairo": MessageLookupByLibrary.simpleMessage("cairo"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "car": MessageLookupByLibrary.simpleMessage("car"),
@@ -66,6 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "pleaseEnterValidPhoneNumber": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid phone number"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "reminder":
             MessageLookupByLibrary.simpleMessage("you have rental today"),
         "reminderRental":
@@ -76,6 +80,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "rentalTime": MessageLookupByLibrary.simpleMessage("rental time"),
         "saveRental": MessageLookupByLibrary.simpleMessage("save rental"),
         "scanQr": MessageLookupByLibrary.simpleMessage("scanQr"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("Terms and Conditions"),
         "thisFieldIsRequired":
             MessageLookupByLibrary.simpleMessage("This field is required")
       };

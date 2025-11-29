@@ -17,6 +17,10 @@
   "enterPassword": "Enter your password",
   "passwordTooShort": "Your password must be at least 8 characters",
   "forgotPassword": "Forgot password?",
+  "termsAndConditions": "Terms and Conditions",
+  "byPressingContinue": "By pressing continue, you are agreeing to",
+  "and": "and",
+  "privacyPolicy": "Privacy Policy",
 
   "block" : "block",
   "home": "Home",

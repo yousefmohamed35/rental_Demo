@@ -1,5 +1,6 @@
 import 'package:demorental/core/extension/context.dart';
 import 'package:demorental/core/services/core_utilis/screen_util.dart';
+import 'package:demorental/feature/auth/presentation/view/widgets/shared/terms_and_conditions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../core/constants/themeing/themes_contants.dart';
@@ -73,6 +74,8 @@ class LoginViewBody extends StatelessWidget {
                       ),
                     ),
                   ),
+                  42.toHeight.verticalSpace,
+                  TermsAndConditions(),
                 ],
               ),
             ),

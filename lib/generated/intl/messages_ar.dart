@@ -26,7 +26,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "addNewRental":
             MessageLookupByLibrary.simpleMessage("إضافة إيجار جديد"),
         "alexandria": MessageLookupByLibrary.simpleMessage("الأسكندرية"),
+        "and": MessageLookupByLibrary.simpleMessage("و"),
         "block": MessageLookupByLibrary.simpleMessage("شقة"),
+        "byPressingContinue": MessageLookupByLibrary.simpleMessage(
+            "بالضغط على متابعة ، فإنك توافق على"),
         "cairo": MessageLookupByLibrary.simpleMessage("القاهرة"),
         "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "car": MessageLookupByLibrary.simpleMessage("سيارة"),
@@ -65,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
         "pleaseEnterValidPhoneNumber":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال رقم هاتف صالح"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "reminder": MessageLookupByLibrary.simpleMessage("لديك ايجار اليوم"),
         "reminderRental":
             MessageLookupByLibrary.simpleMessage("تذكير بالإيجار"),
@@ -74,6 +78,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "rentalTime": MessageLookupByLibrary.simpleMessage("وقت الإيجار"),
         "saveRental": MessageLookupByLibrary.simpleMessage("حفظ الإيجار"),
         "scanQr": MessageLookupByLibrary.simpleMessage("مسح الباركود"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("الشروط و الأحكام"),
         "thisFieldIsRequired":
             MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب")
       };
