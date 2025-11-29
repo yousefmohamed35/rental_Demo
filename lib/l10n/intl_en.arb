@@ -16,6 +16,7 @@
   "password": "Password",
   "enterPassword": "Enter your password",
   "passwordTooShort": "Your password must be at least 8 characters",
+  "forgotPassword": "Forgot password?",
 
   "block" : "block",
   "home": "Home",

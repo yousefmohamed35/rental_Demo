@@ -44,21 +44,35 @@ class LoginViewBody extends StatelessWidget {
                   ),
                   10.toHeight.verticalSpace,
                   GenericTextField(
-                          isRequired: true,
-                         // controller: _cubit.passwordController,
-                          labelText: context.locale.password,
-                          hint: context.locale.enterPassword,
-                        //  focusNode: _cubit.passwordFocusNode,
-                          type: TextInputType.visiblePassword,
-                          textInputAction: TextInputAction.next,
-                          validation: (value) {
-                            if (value != null && value.length < 8) {
-                              return context.locale.passwordTooShort;
-                            }
-                            return null;
-                          },
-                        ),
-                        10.toHeight.verticalSpace,
+                    isRequired: true,
+                    // controller: _cubit.passwordController,
+                    labelText: context.locale.password,
+                    hint: context.locale.enterPassword,
+                    //  focusNode: _cubit.passwordFocusNode,
+                    type: TextInputType.visiblePassword,
+                    textInputAction: TextInputAction.next,
+                    validation: (value) {
+                      if (value != null && value.length < 8) {
+                        return context.locale.passwordTooShort;
+                      }
+                      return null;
+                    },
+                  ),
+                  10.toHeight.verticalSpace,
+                  InkWell(
+                    onTap: () {
+                      // _cubit.clearControllers();
+                      // context.pushRoute(const ForgetPasswordRoute());
+                    },
+                    child: Text(
+                      context.locale.forgotPassword,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.normal,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

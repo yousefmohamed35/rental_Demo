@@ -51,6 +51,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterPassword": MessageLookupByLibrary.simpleMessage("ادخل كلمة مرور"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("اكتب رقم الهاتف"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور ؟"),
         "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),
         "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
         "locale": MessageLookupByLibrary.simpleMessage("ar"),

@@ -16,6 +16,7 @@
   "password": "كلمة مرور",
   "enterPassword": "ادخل كلمة مرور",
   "passwordTooShort": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+  "forgotPassword": "نسيت كلمة المرور ؟",
 
 
   "block" : "شقة",
