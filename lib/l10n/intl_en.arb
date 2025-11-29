@@ -4,6 +4,9 @@
   "changeLanguage": "Change Language",
   "confirm": "Confirm",
   "cancel": "Cancel",
+  
+  "login": "Login",
+
   "block" : "block",
   "home": "Home",
   "addNew":"Add new",

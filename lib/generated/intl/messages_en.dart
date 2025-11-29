@@ -47,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "giza": MessageLookupByLibrary.simpleMessage("giza"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "locale": MessageLookupByLibrary.simpleMessage("en"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
         "newRental": MessageLookupByLibrary.simpleMessage("new rental"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "reminder":
