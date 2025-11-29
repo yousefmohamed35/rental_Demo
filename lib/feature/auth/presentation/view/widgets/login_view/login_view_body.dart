@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../core/constants/themeing/themes_contants.dart';
 import '../../../../../../core/presentation/widgets/button/app_button.dart';
-import '../../../../../../core/presentation/widgets/logo/arkanzax_logo.dart';
 import '../../../../../../core/presentation/widgets/text_fields/email_or_phone_text_field.dart';
 import '../../../../../../core/presentation/widgets/text_fields/generic_text_field.dart';
 import '../shared/powered_by_arkanzax.dart';
@@ -26,8 +25,6 @@ class LoginViewBody extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ArkanzaxLogo(),
-                  20.toHeight.verticalSpace,
                   Text(
                     context.locale.login,
                     style: context.textTheme.titleSmall?.copyWith(
@@ -90,7 +87,7 @@ class LoginViewBody extends StatelessWidget {
           AppButton(
             label: context.locale.login,
             onPressed: () {
-              context.pushRoute(HomeRoute());
+              context.replaceRoute(HomeRoute());
             },
             width: double.infinity,
           ),
