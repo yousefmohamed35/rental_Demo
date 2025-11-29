@@ -1,13 +1,15 @@
 import 'package:country_code_picker/country_code_picker.dart';
+import 'package:demorental/core/domain/validation/email_validator.dart';
+import 'package:demorental/core/extension/context.dart';
+import 'package:demorental/core/extension/string.dart';
+import 'package:demorental/core/services/core_utilis/screen_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:scr_north_coast/core/domain/validation/email_validator.dart';
-import 'package:scr_north_coast/core/extensions/context.dart';
-import 'package:scr_north_coast/core/extensions/string.dart';
 import 'package:scr_north_coast/core/presentation/widgets/country_code_picker_button.dart';
-import 'package:scr_north_coast/core/services/core_utils/screen_util.dart';
+
 
 import '../../../../generated/l10n.dart';
+import '../../../utilities/light_theme/light_colors.dart';
 
 class EmailOrPhoneTextField extends StatefulWidget {
   final TextEditingController controller;
@@ -185,7 +187,7 @@ class _EmailOrPhoneTextFieldState extends State<EmailOrPhoneTextField> {
             filled: true,
             fillColor: Colors.white,
             hintStyle: context.textTheme.labelSmall?.copyWith(
-              color: AppColors.textGray,
+              color: AppColors.secondText,
               fontSize: 12.toFont,
             ),
             enabledBorder: OutlineInputBorder(
