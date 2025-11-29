@@ -1,6 +1,9 @@
 {
   "@@locale": "en",
   "locale": "en",
+  "changeLanguage": "Change Language",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
   "block" : "block",
   "home": "Home",
   "addNew":"Add new",

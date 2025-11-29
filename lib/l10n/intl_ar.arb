@@ -1,6 +1,10 @@
 {
   "@@locale": "ar",
   "locale": "ar",
+  "changeLanguage": "تغيير اللغة",
+  "confirm": "تاكيد",
+  "cancel": "إلغاء",
+
   "block" : "شقة",
   "home": "الصفحة الرئيسية",
   "addNew":"إضافة جديد",

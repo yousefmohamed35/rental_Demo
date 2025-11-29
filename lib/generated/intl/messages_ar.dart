@@ -28,7 +28,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "alexandria": MessageLookupByLibrary.simpleMessage("الأسكندرية"),
         "block": MessageLookupByLibrary.simpleMessage("شقة"),
         "cairo": MessageLookupByLibrary.simpleMessage("القاهرة"),
+        "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "car": MessageLookupByLibrary.simpleMessage("سيارة"),
+        "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "chooseCarType":
             MessageLookupByLibrary.simpleMessage("اختر نوع السيارة"),
         "chooseHomeLocation":
@@ -39,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("اختر وقت الإيجار"),
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("اختر نوع الإيجار"),
+        "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
         "enterManually": MessageLookupByLibrary.simpleMessage("ادخل يدويا"),
         "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),
         "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),

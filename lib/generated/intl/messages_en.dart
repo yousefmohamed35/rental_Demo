@@ -27,7 +27,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "alexandria": MessageLookupByLibrary.simpleMessage("alexandria"),
         "block": MessageLookupByLibrary.simpleMessage("block"),
         "cairo": MessageLookupByLibrary.simpleMessage("cairo"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "car": MessageLookupByLibrary.simpleMessage("car"),
+        "changeLanguage":
+            MessageLookupByLibrary.simpleMessage("Change Language"),
         "chooseCarType":
             MessageLookupByLibrary.simpleMessage("choose car type"),
         "chooseHomeLocation":
@@ -38,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("choose rental time"),
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("choose rental type"),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "enterManually":
             MessageLookupByLibrary.simpleMessage("enter manunally"),
         "giza": MessageLookupByLibrary.simpleMessage("giza"),
