@@ -48,6 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterEmail":
             MessageLookupByLibrary.simpleMessage("ادخل البريد الالكتروني"),
         "enterManually": MessageLookupByLibrary.simpleMessage("ادخل يدويا"),
+        "enterPassword": MessageLookupByLibrary.simpleMessage("ادخل كلمة مرور"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("اكتب رقم الهاتف"),
         "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),
@@ -56,6 +57,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
         "newRental": MessageLookupByLibrary.simpleMessage("إيجار جديد"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة مرور"),
+        "passwordTooShort": MessageLookupByLibrary.simpleMessage(
+            "يجب أن تكون كلمة المرور 8 أحرف على الأقل"),
         "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
         "pleaseEnterValidPhoneNumber":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال رقم هاتف صالح"),

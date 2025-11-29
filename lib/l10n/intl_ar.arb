@@ -13,6 +13,9 @@
   "enterEmail": "ادخل البريد الالكتروني",
   "enterPhoneNumber": "اكتب رقم الهاتف",
   "emailValidation": "عنوان البريد الإلكتروني الذي ادخلته غير صالح",
+  "password": "كلمة مرور",
+  "enterPassword": "ادخل كلمة مرور",
+  "passwordTooShort": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
 
 
   "block" : "شقة",

@@ -48,6 +48,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterEmail": MessageLookupByLibrary.simpleMessage("Enter Email"),
         "enterManually":
             MessageLookupByLibrary.simpleMessage("enter manunally"),
+        "enterPassword":
+            MessageLookupByLibrary.simpleMessage("Enter your password"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("Enter your phone number"),
         "giza": MessageLookupByLibrary.simpleMessage("giza"),
@@ -56,6 +58,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "newRental": MessageLookupByLibrary.simpleMessage("new rental"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
+        "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "passwordTooShort": MessageLookupByLibrary.simpleMessage(
+            "Your password must be at least 8 characters"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "pleaseEnterValidPhoneNumber": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid phone number"),
