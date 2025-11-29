@@ -42,13 +42,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("اختر نوع الإيجار"),
         "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "emailValidation": MessageLookupByLibrary.simpleMessage(
+            "عنوان البريد الإلكتروني الذي ادخلته غير صالح"),
+        "enterEmail":
+            MessageLookupByLibrary.simpleMessage("ادخل البريد الالكتروني"),
         "enterManually": MessageLookupByLibrary.simpleMessage("ادخل يدويا"),
+        "enterPhoneNumber":
+            MessageLookupByLibrary.simpleMessage("اكتب رقم الهاتف"),
         "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),
         "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
         "locale": MessageLookupByLibrary.simpleMessage("ar"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
         "newRental": MessageLookupByLibrary.simpleMessage("إيجار جديد"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
+        "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
+        "pleaseEnterValidPhoneNumber":
+            MessageLookupByLibrary.simpleMessage("يرجى إدخال رقم هاتف صالح"),
         "reminder": MessageLookupByLibrary.simpleMessage("لديك ايجار اليوم"),
         "reminderRental":
             MessageLookupByLibrary.simpleMessage("تذكير بالإيجار"),
@@ -57,6 +67,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تم حفظ الإيجار بنجاح"),
         "rentalTime": MessageLookupByLibrary.simpleMessage("وقت الإيجار"),
         "saveRental": MessageLookupByLibrary.simpleMessage("حفظ الإيجار"),
-        "scanQr": MessageLookupByLibrary.simpleMessage("مسح الباركود")
+        "scanQr": MessageLookupByLibrary.simpleMessage("مسح الباركود"),
+        "thisFieldIsRequired":
+            MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب")
       };
 }

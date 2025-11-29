@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../core/constants/themeing/themes_contants.dart';
 import '../../../../../../core/presentation/widgets/logo/arkanzax_logo.dart';
+import '../../../../../../core/presentation/widgets/text_fields/email_or_phone_text_field.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -28,18 +29,19 @@ class LoginViewBody extends StatelessWidget {
                     ),
                   ),
                   64.toHeight.verticalSpace,
-                  //  EmailOrPhoneTextField(
-                  //         textInputAction: TextInputAction.next,
-                  //         focusNode: _cubit.emailOrPhoneFocusNode,
-                  //         nextFocusNode: _cubit.passwordFocusNode,
-                  //         controller: _cubit.emailOrPhoneController,
-                  //         isRequired: true,
-                  //         onCountryChange: (code) {
-                  //           _cubit.selectedCountryCode = code;
-                  //           debugPrint("${code?.code.toString()}");
-                  //         },
-                  //       ),
-                        10.toHeight.verticalSpace,
+                  EmailOrPhoneTextField(
+                    textInputAction: TextInputAction.next,
+                    //  focusNode: _cubit.emailOrPhoneFocusNode,
+                    //  nextFocusNode: _cubit.passwordFocusNode,
+                    //  controller: _cubit.emailOrPhoneController,
+                    isRequired: true,
+                    onCountryChange: (code) {
+                      //    _cubit.selectedCountryCode = code;
+                      debugPrint("${code?.code.toString()}");
+                    },
+                    controller: TextEditingController(),
+                  ),
+                  10.toHeight.verticalSpace,
                 ],
               ),
             ),

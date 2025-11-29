@@ -4,8 +4,15 @@
   "changeLanguage": "Change Language",
   "confirm": "Confirm",
   "cancel": "Cancel",
-  
+
   "login": "Login",
+  "thisFieldIsRequired": "This field is required",
+  "pleaseEnterValidPhoneNumber": "Please enter a valid phone number",
+  "email": "Email",
+  "phone": "Phone",
+  "enterEmail": "Enter Email",
+  "enterPhoneNumber": "Enter your phone number",
+  "emailValidation": "The email address you have entered is invalid",
 
   "block" : "block",
   "home": "Home",

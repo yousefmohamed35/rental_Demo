@@ -42,14 +42,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("choose rental type"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "emailValidation": MessageLookupByLibrary.simpleMessage(
+            "The email address you have entered is invalid"),
+        "enterEmail": MessageLookupByLibrary.simpleMessage("Enter Email"),
         "enterManually":
             MessageLookupByLibrary.simpleMessage("enter manunally"),
+        "enterPhoneNumber":
+            MessageLookupByLibrary.simpleMessage("Enter your phone number"),
         "giza": MessageLookupByLibrary.simpleMessage("giza"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "locale": MessageLookupByLibrary.simpleMessage("en"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "newRental": MessageLookupByLibrary.simpleMessage("new rental"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
+        "phone": MessageLookupByLibrary.simpleMessage("Phone"),
+        "pleaseEnterValidPhoneNumber": MessageLookupByLibrary.simpleMessage(
+            "Please enter a valid phone number"),
         "reminder":
             MessageLookupByLibrary.simpleMessage("you have rental today"),
         "reminderRental":
@@ -59,6 +68,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("rental saved successfully"),
         "rentalTime": MessageLookupByLibrary.simpleMessage("rental time"),
         "saveRental": MessageLookupByLibrary.simpleMessage("save rental"),
-        "scanQr": MessageLookupByLibrary.simpleMessage("scanQr")
+        "scanQr": MessageLookupByLibrary.simpleMessage("scanQr"),
+        "thisFieldIsRequired":
+            MessageLookupByLibrary.simpleMessage("This field is required")
       };
 }

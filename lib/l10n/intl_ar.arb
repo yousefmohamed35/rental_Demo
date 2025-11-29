@@ -4,7 +4,17 @@
   "changeLanguage": "تغيير اللغة",
   "confirm": "تاكيد",
   "cancel": "إلغاء",
+
   "login": "تسجيل دخول",
+  "thisFieldIsRequired": "هذا الحقل مطلوب",
+  "pleaseEnterValidPhoneNumber": "يرجى إدخال رقم هاتف صالح",
+  "email": "البريد الالكتروني",
+  "phone": "الهاتف",
+  "enterEmail": "ادخل البريد الالكتروني",
+  "enterPhoneNumber": "اكتب رقم الهاتف",
+  "emailValidation": "عنوان البريد الإلكتروني الذي ادخلته غير صالح",
+
+
   "block" : "شقة",
   "home": "الصفحة الرئيسية",
   "addNew":"إضافة جديد",

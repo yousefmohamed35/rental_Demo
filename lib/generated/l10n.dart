@@ -100,6 +100,76 @@ class S {
     );
   }
 
+  /// `This field is required`
+  String get thisFieldIsRequired {
+    return Intl.message(
+      'This field is required',
+      name: 'thisFieldIsRequired',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid phone number`
+  String get pleaseEnterValidPhoneNumber {
+    return Intl.message(
+      'Please enter a valid phone number',
+      name: 'pleaseEnterValidPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone {
+    return Intl.message(
+      'Phone',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Email`
+  String get enterEmail {
+    return Intl.message(
+      'Enter Email',
+      name: 'enterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your phone number`
+  String get enterPhoneNumber {
+    return Intl.message(
+      'Enter your phone number',
+      name: 'enterPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The email address you have entered is invalid`
+  String get emailValidation {
+    return Intl.message(
+      'The email address you have entered is invalid',
+      name: 'emailValidation',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `block`
   String get block {
     return Intl.message(
