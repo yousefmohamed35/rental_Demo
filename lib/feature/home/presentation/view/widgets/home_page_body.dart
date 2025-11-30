@@ -4,6 +4,7 @@ import 'package:demorental/core/presentation/widgets/logo/arkanzax_logo.dart';
 import 'package:demorental/core/services/core_utilis/screen_util.dart';
 import 'package:demorental/core/utilities/light_theme/light_colors.dart';
 import 'package:flutter/material.dart';
+import 'header_title.dart';
 import 'package_info_card.dart';
 
 class HomePageBody extends StatelessWidget {
@@ -18,21 +19,7 @@ class HomePageBody extends StatelessWidget {
           20.toHeight.verticalSpace,
           PackageInfoCard(),
           20.toHeight.verticalSpace,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                context.locale.category,
-                style: context.textTheme.bodyMedium,
-              ),
-              Text(
-                context.locale.more,
-                style: context.textTheme.bodyMedium?.copyWith(
-                  color: AppColors.primaryColor,
-                ),
-              ),
-            ],
-          ),
+          HeaderTitle(title: context.locale.category),
           20.toHeight.verticalSpace,
           Card(
             child: ListTile(
@@ -52,6 +39,11 @@ class HomePageBody extends StatelessWidget {
               trailing: Icon(Icons.arrow_forward_ios),
             ),
           ),
+          20.toHeight.verticalSpace,
+          HeaderTitle(title: context.locale.category),
+          20.toHeight.verticalSpace,
+          HeaderTitle(title: context.locale.category),
+          20.toHeight.verticalSpace,
         ],
       ),
     );
