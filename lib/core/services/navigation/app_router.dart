@@ -6,6 +6,7 @@ import '../../../feature/add_new_category/presentation/view/add_new_category_pag
 import '../../../feature/add_new_rental/presentation/view/add_new_rental_page.dart';
 import '../../../feature/auth/presentation/view/login_view_page.dart';
 import '../../../feature/home/presentation/view/home_page.dart';
+import '../../../feature/upgrade_plans/presentation/view/upgrade_plans_page.dart';
 
 part 'app_router.gr.dart';
 
@@ -22,5 +23,8 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: HomeRoute.page, path: AppRoutes.home),
     AutoRoute(page: AddNewRentalRoute.page, path: AppRoutes.addNewRental),
     AutoRoute(page: AddNewCategoryRoute.page, path: AppRoutes.addNewCategory),
+
+    /// upgrade view
+    AutoRoute(page: UpgradePlansRoute.page, path: AppRoutes.upgradePlans),
   ];
 }

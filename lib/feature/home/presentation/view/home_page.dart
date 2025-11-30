@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:demorental/core/extension/context.dart';
-import 'package:demorental/core/presentation/widgets/button/app_button.dart';
 import 'package:demorental/core/presentation/widgets/custom_scaffold.dart';
 import 'package:demorental/core/utilities/light_theme/light_colors.dart';
 import 'package:flutter/material.dart';

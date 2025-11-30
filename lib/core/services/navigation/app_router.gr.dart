@@ -73,3 +73,19 @@ class LoginViewRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [UpgradePlansPage]
+class UpgradePlansRoute extends PageRouteInfo<void> {
+  const UpgradePlansRoute({List<PageRouteInfo>? children})
+    : super(UpgradePlansRoute.name, initialChildren: children);
+
+  static const String name = 'UpgradePlansRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const UpgradePlansPage();
+    },
+  );
+}
