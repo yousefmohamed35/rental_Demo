@@ -1,5 +1,8 @@
 import 'package:auto_route/annotations.dart';
+import 'package:demorental/core/extension/context.dart';
 import 'package:demorental/core/presentation/widgets/custom_scaffold.dart';
+import 'package:demorental/core/utilities/light_theme/light_colors.dart';
+import 'package:demorental/feature/upgrade_plans/presentation/view/widgets/upgrade_plans_body.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()
@@ -8,6 +11,11 @@ class UpgradePlansPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScaffold(child: Text('data'));
+    return CustomScaffold(
+      backgroundColor: AppColors.scaffoldBackgroundColor,
+      appBarColor: AppColors.primaryColor,
+      title: context.locale.upgradePlans,
+      child: UpgradePlansBody(),
+    );
   }
 }

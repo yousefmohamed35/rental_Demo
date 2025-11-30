@@ -1,5 +1,7 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:demorental/core/extension/context.dart';
 import 'package:demorental/core/services/core_utilis/screen_util.dart';
+import 'package:demorental/core/services/navigation/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -41,7 +43,9 @@ class PackageInfoCard extends StatelessWidget {
             AppButton(
               padding: EdgeInsets.all(0),
               label: context.locale.upgradePlans,
-              onPressed: () {},
+              onPressed: () {
+                context.pushRoute(UpgradePlansRoute());
+              },
               height: 40.toHeight,
               width: double.infinity,
             ),
