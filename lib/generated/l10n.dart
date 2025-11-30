@@ -350,6 +350,26 @@ class S {
     );
   }
 
+  /// `Finished reminders`
+  String get finishedReminders {
+    return Intl.message(
+      'Finished reminders',
+      name: 'finishedReminders',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Coming reminders`
+  String get comingReminders {
+    return Intl.message(
+      'Coming reminders',
+      name: 'comingReminders',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Add new category`
   String get addNewCategory {
     return Intl.message(

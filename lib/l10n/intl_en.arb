@@ -32,6 +32,8 @@
   "category":"Category",
   "more":"More",
   "finished" :"Finished",
+   "finishedReminders":"Finished reminders",
+  "comingReminders":"Coming reminders",
 
 
   "addNewCategory":"Add new category",

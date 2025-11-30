@@ -51,6 +51,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("choose rental time"),
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("choose rental type"),
+        "comingReminders":
+            MessageLookupByLibrary.simpleMessage("Coming reminders"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
@@ -66,6 +68,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("Enter your phone number"),
         "finished": MessageLookupByLibrary.simpleMessage("Finished"),
+        "finishedReminders":
+            MessageLookupByLibrary.simpleMessage("Finished reminders"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot password?"),
         "giza": MessageLookupByLibrary.simpleMessage("giza"),

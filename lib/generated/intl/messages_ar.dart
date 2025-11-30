@@ -51,6 +51,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("اختر وقت الإيجار"),
         "chooseRentalType":
             MessageLookupByLibrary.simpleMessage("اختر نوع الإيجار"),
+        "comingReminders":
+            MessageLookupByLibrary.simpleMessage("التذكيرات القادمة"),
         "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
@@ -65,6 +67,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("اكتب رقم الهاتف"),
         "finished": MessageLookupByLibrary.simpleMessage("انتهت"),
+        "finishedReminders":
+            MessageLookupByLibrary.simpleMessage("التذكيرات المنتهية"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور ؟"),
         "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),

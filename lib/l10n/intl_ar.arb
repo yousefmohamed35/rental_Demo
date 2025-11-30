@@ -32,6 +32,9 @@
   "category":"الفئات",
   "more":"المزيد",
   "finished":"انتهت",
+  "finishedReminders":"التذكيرات المنتهية",
+  "comingReminders":"التذكيرات القادمة",
+
 
   "addNewCategory":"إضافة فئة جديدة",
   "categoryName":"اسم الفئة",
