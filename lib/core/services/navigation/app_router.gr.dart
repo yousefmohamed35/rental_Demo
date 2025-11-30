@@ -11,6 +11,22 @@
 part of 'app_router.dart';
 
 /// generated route for
+/// [AddNewCategoryPage]
+class AddNewCategoryRoute extends PageRouteInfo<void> {
+  const AddNewCategoryRoute({List<PageRouteInfo>? children})
+    : super(AddNewCategoryRoute.name, initialChildren: children);
+
+  static const String name = 'AddNewCategoryRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddNewCategoryPage();
+    },
+  );
+}
+
+/// generated route for
 /// [AddNewRentalPage]
 class AddNewRentalRoute extends PageRouteInfo<void> {
   const AddNewRentalRoute({List<PageRouteInfo>? children})
