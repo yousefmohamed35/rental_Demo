@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "addNewRental": MessageLookupByLibrary.simpleMessage("Add New Rental"),
         "alexandria": MessageLookupByLibrary.simpleMessage("alexandria"),
         "and": MessageLookupByLibrary.simpleMessage("and"),
+        "attempts": MessageLookupByLibrary.simpleMessage("Attempts"),
         "block": MessageLookupByLibrary.simpleMessage("block"),
         "by": MessageLookupByLibrary.simpleMessage("By"),
         "byPressingContinue": MessageLookupByLibrary.simpleMessage(
@@ -33,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cairo": MessageLookupByLibrary.simpleMessage("cairo"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "car": MessageLookupByLibrary.simpleMessage("car"),
+        "category": MessageLookupByLibrary.simpleMessage("Category"),
         "changeLanguage":
             MessageLookupByLibrary.simpleMessage("Change Language"),
         "chooseCarType":
@@ -63,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "locale": MessageLookupByLibrary.simpleMessage("en"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "more": MessageLookupByLibrary.simpleMessage("More"),
         "newRental": MessageLookupByLibrary.simpleMessage("new rental"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
@@ -77,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("you have rental today"),
         "reminderRental":
             MessageLookupByLibrary.simpleMessage("reminder Rental"),
+        "reminders": MessageLookupByLibrary.simpleMessage("Reminders"),
         "rentalDate": MessageLookupByLibrary.simpleMessage("rental date"),
         "rentalSavedSuccessfully":
             MessageLookupByLibrary.simpleMessage("rental saved successfully"),
@@ -86,6 +90,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("Terms and Conditions"),
         "thisFieldIsRequired":
-            MessageLookupByLibrary.simpleMessage("This field is required")
+            MessageLookupByLibrary.simpleMessage("This field is required"),
+        "upgrade": MessageLookupByLibrary.simpleMessage("Upgrade"),
+        "upgradePlans": MessageLookupByLibrary.simpleMessage("Upgrade plans")
       };
 }

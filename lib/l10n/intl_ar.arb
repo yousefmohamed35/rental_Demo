@@ -25,6 +25,13 @@
   "by" : "بواسطة",
   "createAccount": "انشاء حساب",
 
+  "upgrade":"ترقية",
+  "attempts":"المحاولات",
+  "reminders":"التذكيرات",
+  "upgradePlans":"خطط الترقية",
+  "category":"الفئات",
+  "more":"المزيد",
+
   "block" : "شقة",
   "home": "الصفحة الرئيسية",
   "addNew":"إضافة جديد",

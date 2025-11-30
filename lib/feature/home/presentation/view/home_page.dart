@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: AppButton(
-            label: 'Upgrade',
+            label: context.locale.upgrade,
             padding: EdgeInsets.all(8),
             backgroundColor: Colors.white,
             textStyle: Theme.of(context).textTheme.labelSmall?.copyWith(

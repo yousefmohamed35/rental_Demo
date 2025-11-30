@@ -27,6 +27,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("إضافة إيجار جديد"),
         "alexandria": MessageLookupByLibrary.simpleMessage("الأسكندرية"),
         "and": MessageLookupByLibrary.simpleMessage("و"),
+        "attempts": MessageLookupByLibrary.simpleMessage("المحاولات"),
         "block": MessageLookupByLibrary.simpleMessage("شقة"),
         "by": MessageLookupByLibrary.simpleMessage("بواسطة"),
         "byPressingContinue": MessageLookupByLibrary.simpleMessage(
@@ -34,6 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cairo": MessageLookupByLibrary.simpleMessage("القاهرة"),
         "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "car": MessageLookupByLibrary.simpleMessage("سيارة"),
+        "category": MessageLookupByLibrary.simpleMessage("الفئات"),
         "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "chooseCarType":
             MessageLookupByLibrary.simpleMessage("اختر نوع السيارة"),
@@ -62,6 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
         "locale": MessageLookupByLibrary.simpleMessage("ar"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
+        "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "newRental": MessageLookupByLibrary.simpleMessage("إيجار جديد"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة مرور"),
@@ -75,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "reminder": MessageLookupByLibrary.simpleMessage("لديك ايجار اليوم"),
         "reminderRental":
             MessageLookupByLibrary.simpleMessage("تذكير بالإيجار"),
+        "reminders": MessageLookupByLibrary.simpleMessage("التذكيرات"),
         "rentalDate": MessageLookupByLibrary.simpleMessage("تاريخ الإيجار"),
         "rentalSavedSuccessfully":
             MessageLookupByLibrary.simpleMessage("تم حفظ الإيجار بنجاح"),
@@ -84,6 +88,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("الشروط و الأحكام"),
         "thisFieldIsRequired":
-            MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب")
+            MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
+        "upgrade": MessageLookupByLibrary.simpleMessage("ترقية"),
+        "upgradePlans": MessageLookupByLibrary.simpleMessage("خطط الترقية")
       };
 }

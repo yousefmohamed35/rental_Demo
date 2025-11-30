@@ -280,6 +280,66 @@ class S {
     );
   }
 
+  /// `Upgrade`
+  String get upgrade {
+    return Intl.message(
+      'Upgrade',
+      name: 'upgrade',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Attempts`
+  String get attempts {
+    return Intl.message(
+      'Attempts',
+      name: 'attempts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reminders`
+  String get reminders {
+    return Intl.message(
+      'Reminders',
+      name: 'reminders',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upgrade plans`
+  String get upgradePlans {
+    return Intl.message(
+      'Upgrade plans',
+      name: 'upgradePlans',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Category`
+  String get category {
+    return Intl.message(
+      'Category',
+      name: 'category',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More`
+  String get more {
+    return Intl.message(
+      'More',
+      name: 'more',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `block`
   String get block {
     return Intl.message(

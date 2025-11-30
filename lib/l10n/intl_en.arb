@@ -25,6 +25,13 @@
   "by" : "By",
   "createAccount": "Create Account",
 
+  "upgrade":"Upgrade",
+  "attempts":"Attempts",
+  "reminders":"Reminders",
+  "upgradePlans":"Upgrade plans",
+  "category":"Category",
+  "more":"More",
+
   "block" : "block",
   "home": "Home",
   "addNew":"Add new",
