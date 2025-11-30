@@ -22,7 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add": MessageLookupByLibrary.simpleMessage("إضافة"),
         "addNew": MessageLookupByLibrary.simpleMessage("إضافة جديد"),
+        "addNewCategory":
+            MessageLookupByLibrary.simpleMessage("إضافة فئة جديدة"),
         "addNewRental":
             MessageLookupByLibrary.simpleMessage("إضافة إيجار جديد"),
         "alexandria": MessageLookupByLibrary.simpleMessage("الأسكندرية"),
@@ -36,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "car": MessageLookupByLibrary.simpleMessage("سيارة"),
         "category": MessageLookupByLibrary.simpleMessage("الفئات"),
+        "categoryName": MessageLookupByLibrary.simpleMessage("اسم الفئة"),
         "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "chooseCarType":
             MessageLookupByLibrary.simpleMessage("اختر نوع السيارة"),
@@ -52,12 +56,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "emailValidation": MessageLookupByLibrary.simpleMessage(
             "عنوان البريد الإلكتروني الذي ادخلته غير صالح"),
+        "enterCategoryName":
+            MessageLookupByLibrary.simpleMessage("أدخل اسم الفئة"),
         "enterEmail":
             MessageLookupByLibrary.simpleMessage("ادخل البريد الالكتروني"),
         "enterManually": MessageLookupByLibrary.simpleMessage("ادخل يدويا"),
         "enterPassword": MessageLookupByLibrary.simpleMessage("ادخل كلمة مرور"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("اكتب رقم الهاتف"),
+        "finished": MessageLookupByLibrary.simpleMessage("انتهت"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور ؟"),
         "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),

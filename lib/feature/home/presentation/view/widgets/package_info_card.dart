@@ -32,6 +32,12 @@ class PackageInfoCard extends StatelessWidget {
               progress: 0.2,
             ),
             20.toHeight.verticalSpace,
+            PackageInfo(
+              title: context.locale.finished,
+              amount: '1 / 8',
+              progress: 0.1,
+            ),
+            20.toHeight.verticalSpace,
             AppButton(
               padding: EdgeInsets.all(0),
               label: context.locale.upgradePlans,

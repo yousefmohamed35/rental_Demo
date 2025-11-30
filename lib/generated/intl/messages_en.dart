@@ -22,7 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add": MessageLookupByLibrary.simpleMessage("Add"),
         "addNew": MessageLookupByLibrary.simpleMessage("Add new"),
+        "addNewCategory":
+            MessageLookupByLibrary.simpleMessage("Add new category"),
         "addNewRental": MessageLookupByLibrary.simpleMessage("Add New Rental"),
         "alexandria": MessageLookupByLibrary.simpleMessage("alexandria"),
         "and": MessageLookupByLibrary.simpleMessage("and"),
@@ -35,6 +38,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "car": MessageLookupByLibrary.simpleMessage("car"),
         "category": MessageLookupByLibrary.simpleMessage("Category"),
+        "categoryName": MessageLookupByLibrary.simpleMessage("Category name"),
         "changeLanguage":
             MessageLookupByLibrary.simpleMessage("Change Language"),
         "chooseCarType":
@@ -52,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailValidation": MessageLookupByLibrary.simpleMessage(
             "The email address you have entered is invalid"),
+        "enterCategoryName":
+            MessageLookupByLibrary.simpleMessage("Enter category name"),
         "enterEmail": MessageLookupByLibrary.simpleMessage("Enter Email"),
         "enterManually":
             MessageLookupByLibrary.simpleMessage("enter manunally"),
@@ -59,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("Enter your phone number"),
+        "finished": MessageLookupByLibrary.simpleMessage("Finished"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot password?"),
         "giza": MessageLookupByLibrary.simpleMessage("giza"),

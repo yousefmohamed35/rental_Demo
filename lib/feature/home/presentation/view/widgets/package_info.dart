@@ -9,7 +9,12 @@ import '../../../../../core/utilities/light_theme/light_colors.dart';
 import '../../../../../core/utilities/theme/cubit/theme_cubit.dart';
 
 class PackageInfo extends StatelessWidget {
-  const PackageInfo({super.key, required this.title, required this.amount, required this.progress});
+  const PackageInfo({
+    super.key,
+    required this.title,
+    required this.amount,
+    required this.progress,
+  });
   final String title;
   final String amount;
   final double progress;
@@ -18,7 +23,7 @@ class PackageInfo extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text('$title: '),
+        SizedBox(width: 75.toWidth, child: Text('$title: ')),
         Expanded(
           child: LinearPercentIndicator(
             backgroundColor: AppColors.secondaryColor.withOpacity(.4),

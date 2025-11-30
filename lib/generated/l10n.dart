@@ -340,6 +340,56 @@ class S {
     );
   }
 
+  /// `Finished`
+  String get finished {
+    return Intl.message(
+      'Finished',
+      name: 'finished',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add new category`
+  String get addNewCategory {
+    return Intl.message(
+      'Add new category',
+      name: 'addNewCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Category name`
+  String get categoryName {
+    return Intl.message(
+      'Category name',
+      name: 'categoryName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter category name`
+  String get enterCategoryName {
+    return Intl.message(
+      'Enter category name',
+      name: 'enterCategoryName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add`
+  String get add {
+    return Intl.message(
+      'Add',
+      name: 'add',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `block`
   String get block {
     return Intl.message(

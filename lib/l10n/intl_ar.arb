@@ -31,6 +31,12 @@
   "upgradePlans":"خطط الترقية",
   "category":"الفئات",
   "more":"المزيد",
+  "finished":"انتهت",
+
+  "addNewCategory":"إضافة فئة جديدة",
+  "categoryName":"اسم الفئة",
+  "enterCategoryName":"أدخل اسم الفئة",
+  "add":"إضافة",
 
   "block" : "شقة",
   "home": "الصفحة الرئيسية",

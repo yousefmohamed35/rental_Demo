@@ -4,6 +4,7 @@ import 'package:demorental/core/presentation/widgets/button/app_button.dart';
 import 'package:demorental/core/presentation/widgets/custom_scaffold.dart';
 import 'package:demorental/core/utilities/light_theme/light_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 
 import '../../../../core/services/navigation/app_router.dart';
 import 'widgets/home_page_body.dart';
@@ -19,23 +20,15 @@ class HomePage extends StatelessWidget {
       appBarColor: AppColors.primaryColor,
       title: context.locale.home,
       actions: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: AppButton(
-            label: context.locale.upgrade,
-            padding: EdgeInsets.all(8),
-            backgroundColor: Colors.white,
-            textStyle: Theme.of(context).textTheme.labelSmall?.copyWith(
-              color: AppColors.primaryColor,
-              fontWeight: FontWeight.w900,
-            ),
-            onPressed: () {},
-          ),
+        IconButton(
+          icon: const Icon(PhosphorIcons.bell, size: 28),
+          color: Colors.white,
+          onPressed: () {},
         ),
       ],
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          context.pushRoute(AddNewRentalRoute());
+          context.pushRoute(AddNewCategoryRoute());
         },
         label: Text(context.locale.addNew),
         icon: Icon(Icons.add),
