@@ -410,6 +410,56 @@ class S {
     );
   }
 
+  /// `Available plans`
+  String get availablePlans {
+    return Intl.message(
+      'Available plans',
+      name: 'availablePlans',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A basic plan suitable for beginners`
+  String get enterpriseDescription {
+    return Intl.message(
+      'A basic plan suitable for beginners',
+      name: 'enterpriseDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For medium use and small projects`
+  String get premiumDescription {
+    return Intl.message(
+      'For medium use and small projects',
+      name: 'premiumDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The best experience for all advanced features`
+  String get VipDescription {
+    return Intl.message(
+      'The best experience for all advanced features',
+      name: 'VipDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `month`
+  String get month {
+    return Intl.message(
+      'month',
+      name: 'month',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `block`
   String get block {
     return Intl.message(

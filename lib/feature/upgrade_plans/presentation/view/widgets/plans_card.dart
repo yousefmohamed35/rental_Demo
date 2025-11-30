@@ -47,7 +47,7 @@ class PlansCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                '$category Category',
+                '$category ${context.locale.category}',
                 style: context.textTheme.labelSmall?.copyWith(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class PlansCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                '$reminders reminders',
+                '$reminders ${context.locale.reminders}',
                 style: context.textTheme.labelSmall?.copyWith(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,

@@ -16,12 +16,15 @@ class UpgradePlansBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('الخطط المتاحه', style: context.textTheme.titleSmall),
+            Text(
+              context.locale.availablePlans,
+              style: context.textTheme.titleSmall,
+            ),
             20.toHeight.verticalSpace,
             PlansCard(
               color: AppColors.divider,
               title: 'Enterprise',
-              subtitle: 'خطة أساسية مناسبة للبدايات',
+              subtitle: context.locale.enterpriseDescription,
               category: 3,
               reminders: 8,
               price: '0.00 جنيه',
@@ -31,20 +34,20 @@ class UpgradePlansBody extends StatelessWidget {
             PlansCard(
               color: AppColors.accentColor,
               title: 'Premium',
-              subtitle: 'للاستخدام المتوسط والمشاريع الصغيرة',
+              subtitle: context.locale.premiumDescription,
               category: 10,
               reminders: 50,
-              price: '100 جنيه / شهر',
+              price: '100 جنيه / ${context.locale.month}',
               addButton: true,
             ),
             20.toHeight.verticalSpace,
             PlansCard(
               color: AppColors.primaryColor,
               title: 'VIP',
-              subtitle: 'أفضل تجربة، لكل الميزات المتقدمة',
+              subtitle: context.locale.VipDescription,
               category: 50,
               reminders: 200,
-              price: '200 جنيه / شهر',
+              price: '200 جنيه / ${context.locale.month}',
               addButton: true,
             ),
           ],

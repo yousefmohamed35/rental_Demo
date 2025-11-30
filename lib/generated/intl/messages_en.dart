@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "VipDescription": MessageLookupByLibrary.simpleMessage(
+            "The best experience for all advanced features"),
         "add": MessageLookupByLibrary.simpleMessage("Add"),
         "addNew": MessageLookupByLibrary.simpleMessage("Add new"),
         "addNewCategory":
@@ -30,6 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "alexandria": MessageLookupByLibrary.simpleMessage("alexandria"),
         "and": MessageLookupByLibrary.simpleMessage("and"),
         "attempts": MessageLookupByLibrary.simpleMessage("Attempts"),
+        "availablePlans":
+            MessageLookupByLibrary.simpleMessage("Available plans"),
         "block": MessageLookupByLibrary.simpleMessage("block"),
         "by": MessageLookupByLibrary.simpleMessage("By"),
         "byPressingContinue": MessageLookupByLibrary.simpleMessage(
@@ -67,6 +71,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("Enter your phone number"),
+        "enterpriseDescription": MessageLookupByLibrary.simpleMessage(
+            "A basic plan suitable for beginners"),
         "finished": MessageLookupByLibrary.simpleMessage("Finished"),
         "finishedReminders":
             MessageLookupByLibrary.simpleMessage("Finished reminders"),
@@ -76,6 +82,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "locale": MessageLookupByLibrary.simpleMessage("en"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "month": MessageLookupByLibrary.simpleMessage("month"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
         "newRental": MessageLookupByLibrary.simpleMessage("new rental"),
         "or": MessageLookupByLibrary.simpleMessage("or"),
@@ -86,6 +93,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "pleaseEnterValidPhoneNumber": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid phone number"),
         "powered": MessageLookupByLibrary.simpleMessage("Powered"),
+        "premiumDescription": MessageLookupByLibrary.simpleMessage(
+            "For medium use and small projects"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "reminder":
             MessageLookupByLibrary.simpleMessage("you have rental today"),

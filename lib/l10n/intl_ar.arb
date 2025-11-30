@@ -41,6 +41,12 @@
   "enterCategoryName":"أدخل اسم الفئة",
   "add":"إضافة",
 
+  "availablePlans":"الخطط المتاحه",
+  "enterpriseDescription":"خطه اساسية مناسبة للبدايات",
+  "premiumDescription": "للاستخدام المتوسط و المشاريع الصغيره",
+  "VipDescription":"افضل تجربة لكل الميزات المتقدمه",
+  "month": "شهر",
+
   "block" : "شقة",
   "home": "الصفحة الرئيسية",
   "addNew":"إضافة جديد",

@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "VipDescription": MessageLookupByLibrary.simpleMessage(
+            "افضل تجربة لكل الميزات المتقدمه"),
         "add": MessageLookupByLibrary.simpleMessage("إضافة"),
         "addNew": MessageLookupByLibrary.simpleMessage("إضافة جديد"),
         "addNewCategory":
@@ -31,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "alexandria": MessageLookupByLibrary.simpleMessage("الأسكندرية"),
         "and": MessageLookupByLibrary.simpleMessage("و"),
         "attempts": MessageLookupByLibrary.simpleMessage("المحاولات"),
+        "availablePlans": MessageLookupByLibrary.simpleMessage("الخطط المتاحه"),
         "block": MessageLookupByLibrary.simpleMessage("شقة"),
         "by": MessageLookupByLibrary.simpleMessage("بواسطة"),
         "byPressingContinue": MessageLookupByLibrary.simpleMessage(
@@ -66,6 +69,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterPassword": MessageLookupByLibrary.simpleMessage("ادخل كلمة مرور"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("اكتب رقم الهاتف"),
+        "enterpriseDescription":
+            MessageLookupByLibrary.simpleMessage("خطه اساسية مناسبة للبدايات"),
         "finished": MessageLookupByLibrary.simpleMessage("انتهت"),
         "finishedReminders":
             MessageLookupByLibrary.simpleMessage("التذكيرات المنتهية"),
@@ -75,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
         "locale": MessageLookupByLibrary.simpleMessage("ar"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
+        "month": MessageLookupByLibrary.simpleMessage("شهر"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "newRental": MessageLookupByLibrary.simpleMessage("إيجار جديد"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
@@ -85,6 +91,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "pleaseEnterValidPhoneNumber":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال رقم هاتف صالح"),
         "powered": MessageLookupByLibrary.simpleMessage("جميع الحقوق محفوظة"),
+        "premiumDescription": MessageLookupByLibrary.simpleMessage(
+            "للاستخدام المتوسط و المشاريع الصغيره"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "reminder": MessageLookupByLibrary.simpleMessage("لديك ايجار اليوم"),
         "reminderRental":

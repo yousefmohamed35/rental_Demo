@@ -41,6 +41,12 @@
   "enterCategoryName":"Enter category name",
   "add":"Add",
 
+  "availablePlans":"Available plans",
+  "enterpriseDescription":"A basic plan suitable for beginners",
+  "premiumDescription":"For medium use and small projects",
+  "VipDescription":"The best experience for all advanced features",
+  "month":"month",
+
   "block" : "block",
   "home": "Home",
   "addNew":"Add new",
