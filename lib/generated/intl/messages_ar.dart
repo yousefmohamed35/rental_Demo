@@ -77,7 +77,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور ؟"),
         "giza": MessageLookupByLibrary.simpleMessage("الجيزة"),
-        "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "locale": MessageLookupByLibrary.simpleMessage("ar"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
         "month": MessageLookupByLibrary.simpleMessage("شهر"),

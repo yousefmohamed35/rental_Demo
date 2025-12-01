@@ -43,6 +43,22 @@ class AddNewRentalRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [HomeBasePage]
+class HomeBaseRoute extends PageRouteInfo<void> {
+  const HomeBaseRoute({List<PageRouteInfo>? children})
+    : super(HomeBaseRoute.name, initialChildren: children);
+
+  static const String name = 'HomeBaseRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const HomeBasePage();
+    },
+  );
+}
+
+/// generated route for
 /// [HomePage]
 class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute({List<PageRouteInfo>? children})

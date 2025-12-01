@@ -12,6 +12,7 @@ class UpgradePlansPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScaffold(
+      padding: const EdgeInsets.only(top: 24, left: 16, right: 16),
       backgroundColor: AppColors.scaffoldBackgroundColor,
       appBarColor: AppColors.primaryColor,
       title: context.locale.upgradePlans,

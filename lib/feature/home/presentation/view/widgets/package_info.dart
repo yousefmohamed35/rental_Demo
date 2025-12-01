@@ -23,7 +23,16 @@ class PackageInfo extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(width: 75.toWidth, child: Text('$title: ')),
+        SizedBox(
+          width: 70,
+          child: Text(
+            '$title: ',
+            style: context.textTheme.labelSmall?.copyWith(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
         Expanded(
           child: LinearPercentIndicator(
             backgroundColor: AppColors.secondaryColor.withOpacity(.4),
@@ -38,7 +47,14 @@ class PackageInfo extends StatelessWidget {
             isRTL: BlocProvider.of<ThemeCubit>(context).locale == arabicLocale,
           ),
         ),
-        Text(amount),
+        const SizedBox(width: 8),
+        Text(
+          amount,
+          style: context.textTheme.labelSmall?.copyWith(
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ],
     );
   }

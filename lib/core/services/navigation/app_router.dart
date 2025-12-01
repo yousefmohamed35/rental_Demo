@@ -7,6 +7,7 @@ import '../../../feature/add_new_rental/presentation/view/add_new_rental_page.da
 import '../../../feature/auth/presentation/view/login_view_page.dart';
 import '../../../feature/home/presentation/view/home_page.dart';
 import '../../../feature/upgrade_plans/presentation/view/upgrade_plans_page.dart';
+import '../../../layout/home_layouts/presentation/view/home_base_page.dart';
 
 part 'app_router.gr.dart';
 
@@ -20,7 +21,15 @@ class AppRouter extends RootStackRouter {
   @override
   final List<AutoRoute> routes = [
     AutoRoute(page: LoginViewRoute.page, path: AppRoutes.login),
-    AutoRoute(page: HomeRoute.page, path: AppRoutes.home),
+    AutoRoute(
+      page: HomeBaseRoute.page,
+      path: AppRoutes.homeBase,
+      children: [
+        AutoRoute(page: HomeRoute.page, path: AppRoutes.home),
+        AutoRoute(page: UpgradePlansRoute.page, path: 'upgradePlans'),
+      ],
+    ),
+
     AutoRoute(page: AddNewRentalRoute.page, path: AppRoutes.addNewRental),
     AutoRoute(page: AddNewCategoryRoute.page, path: AppRoutes.addNewCategory),
 

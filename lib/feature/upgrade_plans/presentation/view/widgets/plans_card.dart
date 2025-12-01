@@ -39,7 +39,14 @@ class PlansCard extends StatelessWidget {
         children: [
           Text(title),
           10.toHeight.verticalSpace,
-          Text(subtitle, style: context.textTheme.labelSmall),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              subtitle,
+              style: context.textTheme.labelSmall,
+              textAlign: TextAlign.center,
+            ),
+          ),
           10.toHeight.verticalSpace,
           Divider(color: AppColors.mainText),
           10.toHeight.verticalSpace,

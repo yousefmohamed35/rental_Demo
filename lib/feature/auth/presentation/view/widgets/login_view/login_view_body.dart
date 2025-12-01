@@ -87,7 +87,7 @@ class LoginViewBody extends StatelessWidget {
           AppButton(
             label: context.locale.login,
             onPressed: () {
-              context.replaceRoute(HomeRoute());
+              context.replaceRoute(HomeBaseRoute());
             },
             width: double.infinity,
           ),
