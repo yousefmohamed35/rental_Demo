@@ -69,5 +69,8 @@
   "rentalSavedSuccessfully" : "rental saved successfully",
   "newRental":"new rental",
   "reminderRental" :"reminder Rental",
-  "reminder":"you have rental today"
+  "reminder":"you have rental today",
+
+
+  "settings":"Settings"
 }

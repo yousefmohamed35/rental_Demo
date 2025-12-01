@@ -69,5 +69,7 @@
   "rentalSavedSuccessfully" : "تم حفظ الإيجار بنجاح",
   "newRental":"إيجار جديد",
   "reminderRental" : "تذكير بالإيجار",
-  "reminder":"لديك ايجار اليوم"
+  "reminder":"لديك ايجار اليوم",
+
+  "settings" : "الإعدادات"
 }

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-
 import '../../../../core/utilities/light_theme/light_colors.dart';
 import '../../../../core/utilities/theme/cubit/theme_cubit.dart';
 
@@ -21,7 +20,11 @@ class _HomeBasePageState extends State<HomeBasePage> {
   @override
   Widget build(BuildContext context) {
     return AutoTabsRouter(
-      routes: [const HomeRoute(), const UpgradePlansRoute()],
+      routes: [
+        const HomeRoute(),
+        const UpgradePlansRoute(),
+        const SettingsRoute(),
+      ],
       lazyLoad: true,
       builder: (context, child) {
         final tabsRouter = AutoTabsRouter.of(context);
@@ -91,6 +94,14 @@ class _HomeBasePageState extends State<HomeBasePage> {
                     ),
                     GButton(
                       icon: selectedIndex == 1
+                          ? PhosphorIcons.paper_plane_tilt_fill
+                          : PhosphorIcons.paper_plane_tilt,
+                      text: context.locale.reminders,
+                      iconColor: context.primaryColor,
+                      borderRadius: BorderRadius.circular(60),
+                    ),
+                    GButton(
+                      icon: selectedIndex == 2
                           ? PhosphorIcons.megaphone_fill
                           : PhosphorIcons.megaphone,
                       text: context.locale.upgrade,
@@ -98,10 +109,10 @@ class _HomeBasePageState extends State<HomeBasePage> {
                       borderRadius: BorderRadius.circular(60),
                     ),
                     GButton(
-                      icon: selectedIndex == 2
+                      icon: selectedIndex == 3
                           ? PhosphorIcons.user_circle_fill
                           : PhosphorIcons.user_circle,
-                      //   text: context.locale.profile,
+                      text: context.locale.settings,
                       iconColor: context.primaryColor,
                       borderRadius: BorderRadius.circular(60),
                     ),
@@ -113,19 +124,5 @@ class _HomeBasePageState extends State<HomeBasePage> {
         );
       },
     );
-  }
-
-  String _getTitle(int currentIndex) {
-    switch (currentIndex) {
-      case 0:
-        return context.locale.home;
-      case 1:
-        return context.locale.upgrade;
-      case 2:
-      //  return context.locale.profile;
-      default:
-        return '';
-      // return context.locale.properties;
-    }
   }
 }

@@ -104,6 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "rentalTime": MessageLookupByLibrary.simpleMessage("وقت الإيجار"),
         "saveRental": MessageLookupByLibrary.simpleMessage("حفظ الإيجار"),
         "scanQr": MessageLookupByLibrary.simpleMessage("مسح الباركود"),
+        "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("الشروط و الأحكام"),
         "thisFieldIsRequired":
