@@ -22,6 +22,7 @@ class _HomeBasePageState extends State<HomeBasePage> {
     return AutoTabsRouter(
       routes: [
         const HomeRoute(),
+        const RemindersRoute(),
         const UpgradePlansRoute(),
         const SettingsRoute(),
       ],

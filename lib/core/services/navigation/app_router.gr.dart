@@ -91,6 +91,22 @@ class LoginViewRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [RemindersPage]
+class RemindersRoute extends PageRouteInfo<void> {
+  const RemindersRoute({List<PageRouteInfo>? children})
+    : super(RemindersRoute.name, initialChildren: children);
+
+  static const String name = 'RemindersRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const RemindersPage();
+    },
+  );
+}
+
+/// generated route for
 /// [SettingsPage]
 class SettingsRoute extends PageRouteInfo<void> {
   const SettingsRoute({List<PageRouteInfo>? children})
